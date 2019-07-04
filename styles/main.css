@@ -7,7 +7,6 @@ body {
     margin: 5px auto;
     margin-top: 15px;
     text-align: center;
-    border: 2px solid black;
 }
 
 .rules {
@@ -59,6 +58,17 @@ ol {
     margin: 0 auto;
     margin-top: 5px;
     padding: 0;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.endStatus {
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 5px;
+    padding: 5px;
+    text-align: center;
+    border: 2px solid black;
 }
 
 div.dropdown {
@@ -66,7 +76,7 @@ div.dropdown {
 }
 
 .dropdown.show {
-    height: 125px;
+    height: 90px;
 }
 
 .dropdown .btn-primary {
@@ -87,13 +97,18 @@ div.dropdown {
     padding-left: 1.5em!important;
 }
 
-.dropdown-menu *{
+.dropdown-menu * {
     color: black!important;
     font-size: x-small!important;
     list-style-type: circle;
 }
 
-.buttonOff{
+.buttonOff {
     background-color: red;
     border-color: red;
+}
+
+#resetButton {
+    margin: 0 auto;
+    margin-top: 5px;
 }

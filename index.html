@@ -16,24 +16,24 @@
     <script src="./scripts/app.js" defer></script>
     <title>The Game of Life</title>
 </head>
-<body>
+<body class="body">
     <div class="title">
         <h1>The Game of Life</h1>
     </div>
     <div class="rules">
         <h6>User Rules</h6>
         <ol>
-            <li>Select up to 50 squares to seed the board, then click play.</li>
-            <li>Your colony will run through 100 generations. If by the end, you achieve more births than deaths, congratulations, you are the master of all life!</li>
+            <li>Select cells to seed the board, then click play.</li>
+            <li>If you can evolve through 100 generations, you are a master of Life!</li>
         </ol>
         <div class="dropdown">
                 <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Rules to the Game of Life
                 <span class="caret"></span></button>
                 <ul class="dropdown-menu">
-                  <li>Any live cell with fewer than two live neighbors dies, as if by under population.</li>
-                  <li>Any live cell with two or three live neighbors lives on to the next generation.</li>
-                  <li>Any live cell with more than three live neighbors dies, as if by overpopulation.</li>
-                  <li>Any dead cell with exactly three live neighbors becomes a live cell, as if by reproduction.</li>
+                  <li>Any live cell with fewer than two live neighbors dies</li>
+                  <li>Any live cell with two or three live neighbors lives on</li>
+                  <li>Any live cell with more than three live neighbors dies
+                  <li>Any dead cell with exactly three live neighbors becomes a live cell</li>
                   <li style="list-style-type: none!important; padding-top: 0.25em!important">...from Wikipedia - Conway's Game of Life...</li>
                 </ul>
               </div>
@@ -41,6 +41,9 @@
     <div class="board container"></div>
     <div class="bottom container">
         <button id="start" class="btn btn-primary buttonOn" type="button">Start</button>
+        <div>Generation: <span id="generation">0</span></div>
+        <div>Births: <span id="births">0</span></div>
+        <div>Deaths: <span id="deaths">0</span></div>
     </div>
 </body>
 </html>
