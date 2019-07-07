@@ -62,7 +62,7 @@ class Game {
         this.$board.empty();
         for(let i = 0; i < this.gridSize; i++){
             for(let j = 0; j < this.gridSize; j++){
-                let $div = `<div class="off" id="row${i}column${j}" style="width:${this.boardWidth/this.gridSize}px; height:${this.boardWidth/this.gridSize}px; border: 1px solid black;"></div>`;
+                let $div = `<div class="off" id="row${i}column${j}" style="width:${this.boardWidth/this.gridSize}px; height:${this.boardWidth/this.gridSize}px; border: 1px solid white;border-radius: 5px"></div>`;
                 this.$board.append($div);
             }
         }
