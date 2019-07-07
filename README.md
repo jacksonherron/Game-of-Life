@@ -4,9 +4,9 @@ A game I created for my first project with General Assembly.
 
 ## Wire Frames
 
-![WireFrame1] (Assets/WireFrame1.jpg)
+![WireFrame1](Assets/WireFrame1.jpg)
 
-![WireFrame2] (Assets/WireFrame2.jpg)
+![WireFrame2](Assets/WireFrame2.jpg)
 
 ## User Story:
 
@@ -26,4 +26,4 @@ Backgorund image will be from http://www.cellimagelibrary.org/images/38959
 
 Licensed under a Creative Commons Attribution, Non-Commercial, No Derivatives License.
 
-![Cells] (Assets/cells.jpg)
+![Cells](Assets/cells.jpg)
