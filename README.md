@@ -4,9 +4,9 @@ A game I created for my first project with General Assembly.
 
 ## Wire Frames
 
-![WireFrame1] (./Assets/WireFrame1.png)
+![WireFrame1] (Assets/WireFrame1.png)
 
-![WireFrame2] (./Assets/WireFrame2.png)
+![WireFrame2] (Assets/WireFrame2.png)
 
 ## User Story:
 
