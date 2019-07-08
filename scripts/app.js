@@ -8,15 +8,15 @@ class Game {
     constructor() {
         this.boardWidth = 400; // Board is 400px
         this.gridSize = 20; // 10x10 grid
-        this.$body = $('.body')
+        this.$body = $('.body');
         this.$board = $('.board');
         this.$bottom = $('.bottom')
         this.$bottoms = $('.bottoms')
         this.$startButton = $('#start');
         this.generations = 100;
         this.$generationCount = $('#generation');
-        this.$birthCount = $('#births')
-        this.$deathCount = $('#deaths')
+        this.$birthCount = $('#births');
+        this.$deathCount = $('#deaths');
         this.generation = 0;
         this.birthCount = 0;
         this.deathCount = 0;
@@ -31,16 +31,18 @@ class Game {
         this.$board.empty();
         for(let i = 0; i < this.gridSize; i++){
             for(let j = 0; j < this.gridSize; j++){
-                let $div = `<div class="off" id="row${i}column${j}" style="width:${this.boardWidth/this.gridSize}px; height:${this.boardWidth/this.gridSize}px; border: 1px solid white;border-radius: 5px"></div>`;
+                let $div = `<div class="cell off" id="row${i}column${j}" style="width:${this.boardWidth/this.gridSize}px; height:${this.boardWidth/this.gridSize}px; border: 1px solid white; border-radius: 5px"></div>`;
                 this.$board.append($div);
             }
         }
+        this.$cell = $('.cell');
     }
 
     // Add event listeners for buttons
     addEventListeners() {
         this.$startButton.on('click', () => {
             this.$startButton.remove();
+            this.$cell.addClass('removeBorder');
             this.playGame(this.generations);
         });
         

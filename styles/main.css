@@ -156,3 +156,7 @@ div.dropdown {
     padding: 0;
     margin-bottom: 5px;
 }
+
+.removeBorder {
+    border: none!important;
+}
