@@ -16,7 +16,7 @@ body {
 }
 
 .rules {
-    font-size: x-small;
+    font-size: small;
     width: 400px;
     margin: 0 auto;
     margin-bottom: 5px;
@@ -86,7 +86,7 @@ div.dropdown {
 }
 
 .dropdown.show {
-    height: 90px;
+    height: 135px;
 }
 
 .dropdown .btn-primary {
@@ -96,7 +96,7 @@ div.dropdown {
     padding: 0!important;
     padding-top: .5em!important;
     padding-left: 1em!important;
-    font-size: x-small!important;
+    font-size: small!important;
 }
 
 .dropdown-menu {
@@ -109,7 +109,7 @@ div.dropdown {
 
 .dropdown-menu * {
     color: white!important;
-    font-size: x-small!important;
+    font-size: small!important;
     list-style-type: circle;
 }
 
