@@ -11,6 +11,7 @@ class Game {
         this.$body = $('.body')
         this.$board = $('.board');
         this.$bottom = $('.bottom')
+        this.$bottoms = $('.bottoms')
         this.$startButton = $('#start');
         this.generations = 100;
         this.$generationCount = $('#generation');
@@ -149,7 +150,7 @@ class Game {
 
     displayEndGame() {
         this.$board.remove();
-        this.$bottom.remove();
+        this.$bottoms.remove();
         let endString = '';
         if(this.generation === this.generations){
             endString = `Congratulations, you won!!!`;
@@ -172,11 +173,18 @@ class Game {
             $('.endStatus').remove();
             this.$body.append($(`
             <div class="board container"></div>
-            <div class="bottom container">
-                <button id="start" class="btn btn-primary buttonOn" type="button">Start</button>
-                <div>Generation: <span id="generation">0</span></div>
-                <div>Births: <span id="births">0</span></div>
-                <div>Deaths: <span id="deaths">0</span></div>
+            <div class="bottoms">
+                <div class="bottom container">
+                    <button id="start" class="btn btn-primary buttonOn" type="button">Start</button>
+                    <div>Generation: <span id="generation">0</span></div>
+                    <div>Births: <span id="births">0</span></div>
+                    <div>Deaths: <span id="deaths">0</span></div>
+                </div>
+                <div class="credit container">
+                    <div id="personal">Created by: Jackson Herron</div>
+                    <div id="game">Inspired by: John Horton Conway's Game of Life</div>
+                    <div id="photo">Background Photo: <a href="http://www.cellimagelibrary.org/images/38959"></a>http://www.cellimagelibrary.org/images/38959</a></div>
+                </div>
             </div>`));
             game = new Game();
         })

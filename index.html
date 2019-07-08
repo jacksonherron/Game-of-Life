@@ -19,33 +19,42 @@
     <title>The Game of Life</title>
 </head>
 <body class="body">
-    <div class="title">
-        <h1>The Game of Life</h1>
-    </div>
-    <div class="rules">
-        <h6>User Rules</h6>
-        <ol>
-            <li>Select cells to seed the board, then click play to watch life take off.</li>
-            <li>If you can evolve through 100 generations, you win!</li>
-        </ol>
-        <div class="dropdown">
-                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Rules to the Game of Life
-                <span class="caret"></span></button>
-                <ul class="dropdown-menu">
-                  <li>Any live cell with fewer than two live neighbors dies</li>
-                  <li>Any live cell with two or three live neighbors lives on</li>
-                  <li>Any live cell with more than three live neighbors dies
-                  <li>Any dead cell with exactly three live neighbors becomes a live cell</li>
-                  <li style="list-style-type: none!important; padding-top: 0.25em!important"><a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">...from Wikipedia - Conway's Game of Life...</a></li>
-                </ul>
-              </div>
+    <div class="container tops">
+        <div class="title">
+            <h1>The Game of Life</h1>
+        </div>
+        <div class="rules">
+            <h6>User Rules</h6>
+            <ol>
+                <li>Select cells to seed the board, then click play to watch life take off.</li>
+                <li>If you can evolve through 100 generations, you win!</li>
+            </ol>
+            <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Rules to the Game of Life
+                    <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                    <li>Any live cell with fewer than two live neighbors dies</li>
+                    <li>Any live cell with two or three live neighbors lives on</li>
+                    <li>Any live cell with more than three live neighbors dies
+                    <li>Any dead cell with exactly three live neighbors becomes a live cell</li>
+                    <li style="list-style-type: none!important; padding-top: 0.25em!important"><a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">...from Wikipedia - Conway's Game of Life...</a></li>
+                    </ul>
+                </div>
+        </div>
     </div>
     <div class="board container"></div>
-    <div class="bottom container">
-        <button id="start" class="btn btn-primary buttonOn" type="button">Start</button>
-        <div>Generation: <span id="generation">0</span></div>
-        <div>Births: <span id="births">0</span></div>
-        <div>Deaths: <span id="deaths">0</span></div>
+    <div class="bottoms">
+        <div class="bottom container">
+            <button id="start" class="btn btn-primary buttonOn" type="button">Start</button>
+            <div>Generation: <span id="generation">0</span></div>
+            <div>Births: <span id="births">0</span></div>
+            <div>Deaths: <span id="deaths">0</span></div>
+        </div>
+        <div class="credit container">
+            <div id="personal">Created by: Jackson Herron</div>
+            <div id="game">Inspired by: John Horton Conway's Game of Life</div>
+            <div id="photo">Background Photo: <a href="http://www.cellimagelibrary.org/images/38959"></a>http://www.cellimagelibrary.org/images/38959</a></div>
+        </div>
     </div>
 </body>
 </html>
