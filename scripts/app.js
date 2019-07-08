@@ -23,10 +23,21 @@ class Game {
         this.exitCall = false;
         this.board = new Array(this.gridSize).fill(0).map(() => new Array(this.gridSize).fill(0));
         this.renderBoard();
-        this.readBoard();
         this.addEventListeners();
     }
 
+    // Renders the board at the beginning of the game
+    renderBoard() {
+        this.$board.empty();
+        for(let i = 0; i < this.gridSize; i++){
+            for(let j = 0; j < this.gridSize; j++){
+                let $div = `<div class="off" id="row${i}column${j}" style="width:${this.boardWidth/this.gridSize}px; height:${this.boardWidth/this.gridSize}px; border: 1px solid white;border-radius: 5px"></div>`;
+                this.$board.append($div);
+            }
+        }
+    }
+
+    // Add event listeners for buttons
     addEventListeners() {
         this.$startButton.on('click', () => {
             this.$startButton.remove();
@@ -43,30 +54,7 @@ class Game {
                 $(event.target).addClass("on");
                 cellsSelected += 1;
             }
-            if (this.$startButton.hasClass("buttonOn") && cellsSelected > maxSelection){
-                this.$startButton.removeClass("buttonOn");
-                this.$startButton.addClass("buttonOff");
-                this.$startButton.off('click')
-            } else if (this.$startButton.hasClass("buttonOff") && cellsSelected <= maxSelection){
-                this.$startButton.removeClass("buttonOff");
-                this.$startButton.addClass("buttonOn");
-                this.$startButton.on('click', () => {
-                    this.$startButton.remove();
-                    this.playGame(this.generations);
-                });
-            }
         });
-    }
-
-    // Renders the board at the beginning of the game
-    renderBoard() {
-        this.$board.empty();
-        for(let i = 0; i < this.gridSize; i++){
-            for(let j = 0; j < this.gridSize; j++){
-                let $div = `<div class="off" id="row${i}column${j}" style="width:${this.boardWidth/this.gridSize}px; height:${this.boardWidth/this.gridSize}px; border: 1px solid white;border-radius: 5px"></div>`;
-                this.$board.append($div);
-            }
-        }
     }
 
 
