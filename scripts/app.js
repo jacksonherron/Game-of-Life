@@ -173,7 +173,7 @@ class Game {
                 <div class="credit container">
                     <div id="personal">Created by: Jackson Herron</div>
                     <div id="game">Inspired by: John Horton Conway's Game of Life</div>
-                    <div id="photo">Background Photo: <a href="http://www.cellimagelibrary.org/images/38959"></a>http://www.cellimagelibrary.org/images/38959</a></div>
+                    <div id="photo">Background Photo: <a href="http://www.cellimagelibrary.org/images/38959">http://www.cellimagelibrary.org/images/38959</a></div>
                 </div>
             </div>`));
             game = new Game();

@@ -12,8 +12,12 @@ body {
     margin: 5px auto;
     margin-top: 15px;
     text-align: center;
-    font-family: 'Monoton', cursive;
+    font-family: 'Bungee Shade', cursive;
     border-radius: 5px;
+}
+
+h1 {
+    font-size: 34px;
 }
 
 .rules {
@@ -130,7 +134,7 @@ div.dropdown {
 
 .credit {
     flex-direction: column;
-    font-size: x-small;
+    font-size: xx-small;
     margin: 0 auto;
     width: 400px;
     margin-top: 5px;
