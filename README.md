@@ -1,6 +1,10 @@
 # Game-of-Life
 A game I created for my first project with General Assembly, based on Conway's game of life
 
+## Deployment 
+
+https://jacksonherron.github.io/Game-of-Life/
+
 ### Technologies used
 
 - Javascript
